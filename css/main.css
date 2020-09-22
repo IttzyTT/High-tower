@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #E2F3F5;
+}
+
+.container {
+    display: grid;	
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-areas:
+        "header header header header header header header header header header header header"
+        "hero hero hero hero hero hero hero hero hero hero hero hero"
+		"card-one card-one card-one card-one card-two card-two card-two card-two card-three card-three card-three card-three"
+		"partners partners partners partners partners partners partners partners partners partners partners partners"
+		"footer footer footer footer footer footer footer footer footer footer footer footer";
+	height: 93vh;
+}
+header {
+	grid-area: header;
+    background-color: #0E153A;
+	display: flex;
+	justify-content: flex-end;
+    height: 100px;
+}
+
+header nav ul {
+    list-style-type: none;
+    text-align: right;
+    margin: 0;
+}
+header nav ul li {
+    display: inline-block;
+    padding: 1em;
+
+}
+nav ul li a{
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    color: white;
+}
+
+.hero {
+    width: 100%;
+}
+
+
+
+
+.cards {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: auto;
+	grid-area: cards;
+
+	height: auto;
+	padding: 5px;
+}
+.card-one,
+.card-two,
+.card-three {
+	margin: 5px 0;
+    height: 100px;
+    background-color: #0E153A;
+    color: white;
+}
+
+.partners {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto;
+	grid-area: partners;
+
+	height: auto;
+    padding: 5px;
+    background-color: white;
+}
+.partner-one,
+.partner-two,
+.partner-three,
+.partner-four {
+	margin: 5px 0;
+	height: 100px;
+}
+
+
+footer {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto;
+	grid-area: footer;
+
+	padding: 5px;
+    background-color: #0E153A;
+    height: 300px;
+}
+.footer-links,
+.footer-contacts,
+.footer-partners {
+	margin: 5px 0;
+	height: 100px;
+}
