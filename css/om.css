@@ -7,26 +7,25 @@ body {
   background-color: #e2f3f5;
   font-family: poppins, sans-serif;
 }
-
 .container {
-  display: grid;
+  
+  display: table-row;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   grid-template-areas:
-    "header header header"
-    "hero hero hero "
-    "main main main"
-    "footer footer footer";
-  height: 93vh;
+  ".sections1 .sections1 .sections1"
+  ".sections2 .sections2 .sections2"
+  ".sections3 .sections3 .sections3"
+  "footer footer footer"
+  
 }
 header {
   grid-area: header;
   background-color: #0e153a;
-  height: 10vh;
+  height: 15vh;
 }
 .logo {
   height: 70px;
-  margin-top: 10px;
   margin-left: 25px;
 }
 nav {
@@ -50,6 +49,30 @@ nav ul li a {
   margin-right: 10px;
 }
 /* Header / NAVBAR  ends ------------------------------------- */
+.sections1,
+.sections3 {
+  padding: 50px ;
+  border: 2px solid #000;
+  margin-bottom: 10px;
+  color: #e3dddd;
+  background-color: #2f3f52;
+  }
+  .sections2 {
+    padding: 50px ;
+    border: 2px solid #000;
+    margin-bottom: 10px;
+    color: #e3dddd;
+    background-color:#0e153a ;
+    }
+  img {
+  float: left; 
+  margin: 10px;
+  width: 300px;
+    height: 300px;
+  }
+  h1{
+  padding-top: 30px;
+  }
 footer {
   grid-area: footer;
   padding: 5px;
