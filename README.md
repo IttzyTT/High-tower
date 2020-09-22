@@ -11,11 +11,11 @@ Grafisk profil
 
 
 Planera och dela upp arbetet. 
-Hem: Igor, Hillewie
-Tjänster: Igor
-Om: Nandjatt
-Kontakt: Anja
-Portfolio: Hillewie
+(Hem: Igor, Hillewie)
+(Tjänster: Igor)
+(Om: Nandjatt)
+(Kontakt: Anja)
+(Portfolio: Hillewie)
 
 
 Mockup.
