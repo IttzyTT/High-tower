@@ -60,7 +60,21 @@ nav ul li a {
 main {
   grid-area: main;
 }
-
+.cards-logo {
+  height: 100px;
+  margin-left: 90px;
+  margin-bottom: 10px;
+}
+.knapp-hem {
+  margin-top: 200px;
+  margin-left: 100px;
+  width: 100px;
+  height: 30px;
+  background-color: #3d5af1;
+  border-radius: 5px;
+  border-style: none;
+  color: whitesmoke;
+}
 .cards {
   display: flex;
   padding: 2em;
