@@ -10,7 +10,13 @@ Grafisk profil
 
 
 
-Planera och dela upp arbetet 
+Planera och dela upp arbetet. 
+Hem: Igor, Hillewie
+Tjänster: Igor
+Om: Nandjatt
+Kontakt: Anja
+Portfolio: Hillewie
 
 
-Mockup
+Mockup.
+Finns i mockupmappen i github
