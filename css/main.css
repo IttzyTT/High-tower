@@ -10,13 +10,13 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-template-areas:
-    "header header header"
-    "hero hero hero "
-    "main main main"
-    "footer footer footer";
+    "header header header header header header header header header header header header"
+    "hero hero hero hero hero hero hero hero hero hero hero hero"
+    "main main main main main main main main main main main main"
+    "footer footer footer footer footer footer footer footer footer footer footer footer";
   height: 93vh;
 }
 header {
@@ -51,15 +51,19 @@ nav ul li a {
 }
 /* Header / NAVBAR  ends ------------------------------------- */
 footer {
-  grid-area: footer;
-  padding: 5px;
-  background-color: #0e153a;
-  height: 300px;
+    display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto;
+    grid-area: footer;
+    
+
+    background-color: #0e153a;
+    height: 300px;
 }
 .footer-links,
 .footer-contacts,
 .footer-partners {
-  height: 100px;
+  padding: 5em;
 }
 /* Footer ends ------------------------------------- */
 
@@ -96,7 +100,7 @@ main {
 }
 
 .card-one {
-  height: 40em;
+  height: 35em;
   background-color: #0e153a;
   color: white;
   padding: 35px;
@@ -104,7 +108,7 @@ main {
 
 .card-two,
 .card-three {
-  height: 40em;
+  height: 35em;
   margin-left: 2em;
   background-color: #0e153a;
   color: white;
