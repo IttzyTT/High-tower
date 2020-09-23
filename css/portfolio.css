@@ -11,10 +11,9 @@ body {
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   grid-template-areas:
     "header header header"
-    "hero hero hero "
     "main main main"
     "footer footer footer";
   height: 100vh;
@@ -29,6 +28,8 @@ header {
   height: 70px;
   margin-top: 10px;
   margin-left: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 nav {
   display: flex;
@@ -55,6 +56,48 @@ nav li a:hover {
   border-radius: 5px;
 }
 /* Header / NAVBAR  ends ------------------------------------- */
+
+/* main börjar-----------------------------------------------------  */
+main {
+  grid-area: main;
+}
+
+.portcards {
+	display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 15px;
+}
+
+.port-one,
+.port-two,
+.port-three,
+.port-four {
+  display: flex;
+  flex-basis: auto;
+  flex-grow: 1;
+  margin-bottom: 10px;
+}
+.portcard-pic img {
+    height: 250px;
+    width: auto;
+}
+
+.portcard-info {
+    background-color: #0E153A;
+    color: white;
+    height: 250px;
+    margin-left: 10px;
+}
+.portcard-info p {
+  padding: 20px;
+}
+
+
+
+/* main slutar-----------------------------------------------------  */
+
 /* FOOTER ------------------------------------- */
 footer {
   grid-area: footer;
