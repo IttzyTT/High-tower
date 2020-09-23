@@ -10,13 +10,13 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-template-areas:
-    "header header header header header header header header header header header header"
-    "hero hero hero hero hero hero hero hero hero hero hero hero"
-    "main main main main main main main main main main main main"
-    "footer footer footer footer footer footer footer footer footer footer footer footer";
+    "header header header "
+    "hero hero hero "
+    "main main main "
+    "footer footer footer";
   height: 93vh;
 }
 header {
