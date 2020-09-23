@@ -10,14 +10,15 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 1fr;
   grid-template-areas:
-    "header header header "
-    "form form map"
-    "footer footer footer";
-  height: 93 vh;
+    "header header"
+    "main main"
+    "footer footer"; 
+    height: 93vh;
 }
+
 header {
   grid-area: header;
   background-color: #0e153a;
@@ -55,13 +56,12 @@ nav li a:hover {
 }
 /* Header / NAVBAR  ends ------------------------------------- */
 
-.form{
-grid-area: form;
+main{
+  grid-area: main;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
  }
-
-.map{
-  grid-area: map;
-}
 
 
 /* FOOTER ------------------------------------- */
