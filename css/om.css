@@ -156,15 +156,13 @@ footer {
   }
 .sections2 {
   grid-area: sections2;
-  padding: 50px ;
-
+  padding: 50px;
   margin-bottom: 10px;
   color: #e3dddd;
   background-color:#0e153a ;
   }
 .sections3 {
   grid-area: sections3;
-  width: 100vw;
   padding: 50px ;
 
   margin-bottom: 10px;
