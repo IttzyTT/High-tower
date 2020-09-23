@@ -10,7 +10,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(1fr);
+  grid-template-columns: 1fr;
   grid-template-rows: repeat(5, 1fr);
   grid-template-areas:
     "header"
