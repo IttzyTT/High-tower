@@ -13,11 +13,11 @@ body {
   grid-template-columns: repeat(1fr);
   grid-template-rows: repeat(5, 1fr);
   grid-template-areas:
-    "header header header"
-    "intro intro intro "
-    "tjanster tjanster tjanster"
-    "losningar losningar losningar"
-    "footer footer footer";
+    "header"
+    "intro "
+    "tjanster "
+    "losningar "
+    "footer ";
   height: 100vh;
 }
 header {
@@ -180,7 +180,6 @@ main p {
 .tjanster-intro {
   grid-area: intro;
   background-color: #0e153a;
-  width: 100vw;
   margin-top: 1px;
 }
 
