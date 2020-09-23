@@ -13,11 +13,10 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-template-areas:
-    "header header header"
-    "hero hero hero "
-    "main main main"
+    "header header header "
+    "form form map"
     "footer footer footer";
-  height: 100vh;
+  height: 93 vh;
 }
 header {
   grid-area: header;
@@ -55,7 +54,13 @@ nav li a:hover {
 }
 /* Header / NAVBAR  ends ------------------------------------- */
 
+.form{
+grid-area: form;
+ }
 
+.map{
+  grid-area: map;
+}
 
 
 /* FOOTER ------------------------------------- */

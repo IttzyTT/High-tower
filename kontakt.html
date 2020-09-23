@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Kontakt - High Tower</title>
+    <title>Kontakt - Hightower</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
@@ -31,28 +31,29 @@
       <!-- NAV ENDS----------------------- -->
 
       <main>
-       <h2 class="contactform"> Kontakta oss
-       </h2>
+       
+       <section class="form">
+        <h2>Kontakta oss</h2>
+        <form>
+         <label for="fname">Förnamn</label>
+         <input type="text" class="fname" name="fname">
+         <label for="lname">Efternamn</label>
+         <input type="text" class="lname" name="lname">
+         <label for="email">E-post</label>
+         <input type="email" class="email" name="email">
+         <label for="tel">Telefon</label>
+         <input type="number" class="number" name="number">
+         <label for="messege">Meddelande</label>
+         <input type="text" class="messege" name="messege">
+         <button type="button" onclick="alert('Tack!')">Skicka</button>
+         </form>
+       </section>
 
-       <form>
-        <label for="fname">Förnamn</label>
-        <input type="text" class="fname" name="fname">
-        <label for="lname">Efternamn</label>
-        <input type="text" class="lname" name="lname">
-        <label for="email">E-post</label>
-        <input type="email" class="email" name="email">
-        <label for="tel">Telefon</label>
-        <input type="number" class="number" name="number">
-        <label for="messege">Meddelande</label>
-        <input type="text" class="messege" name="messege">
-        <button type="button" onclick="alert('Tack!')">Skicka</button>
-        </form>
-
-        <div class="map">
-          <h2>Karta</h2>
-          <img src="img/Kartahightower.JPG" alt="Karta">
-        </div>
-
+      <section class="map"> 
+       <h2>Karta</h2>
+       <img src="img/Kartahightower.JPG" alt="Karta">
+      </section>
+      
       </main>
 
       <footer>
