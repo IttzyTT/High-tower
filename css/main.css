@@ -164,8 +164,8 @@ footer {
 /* Main hem start--------------------------- */
 
 .hero {
+  grid-area: hero;
   height: 550px;
-  width: 100vw;
   background-image: url(/img/pexels-startup-stock-photos-7075.jpg);
   background-size: cover;
   background-attachment: fixed;
