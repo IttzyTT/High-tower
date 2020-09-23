@@ -60,9 +60,43 @@ main{
   grid-area: main;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  padding: 50px;
  }
 
+ .form{
+   margin-left: 150px;
+   background-color: #0e153a;
+   color: white;
+ }
+
+ input{
+   margin-top: 10px;
+   margin-bottom: 10px;
+   height: 25px;
+   width:400px;
+ }
+
+ .messege{
+  height: 60px;
+  
+ }
+
+ button{
+  margin-top: 10px;
+  color: #e4960f;
+  background-color: #0e153a;
+  padding: 10px;
+ }
+
+ .map{
+   margin-left: 100px;
+   background-color: #0e153a;
+   color: white;
+ }
+
+ .mapcontact{
+  padding: 40px;
+ }
 
 /* FOOTER ------------------------------------- */
 footer {
