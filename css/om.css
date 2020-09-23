@@ -13,9 +13,9 @@ body {
   grid-template-rows: repeat(5, 1fr);
   grid-template-areas:
     "header"
-    "sections1"
+    "historia"
     "sections2"
-    "sections3 "
+    "affarside "
     "footer";
   height: 100vh; 
 }
@@ -159,14 +159,13 @@ footer {
   color: whitesmoke;
   font-size: 20px;
 }
-
 .footer-map {
   height: 200px;
 }
 /* Footer ends ------------------------------------- */
-.sections1 {
+.historia {
   margin-top: 1px;
-  grid-area: sections1;
+  grid-area: historia;
   padding: 80px;
   margin-bottom: 1px;
   color: #e3dddd;
@@ -175,7 +174,7 @@ footer {
 .sections2 {
   display: flex;
   grid-area: sections2;
-  padding: 30px 80px;
+  padding: 80px;
   margin-bottom: 1px;
   color: #e3dddd;
   background-color:#0e153a ;
@@ -189,15 +188,14 @@ footer {
     margin-right: 20px;
     height: 40px ;
   }
-.sections3 {
-  grid-area: sections3;
+.affarside {
+  grid-area: affarside;
   padding: 80px ;
-
-  margin-bottom: 10px;
+  margin-bottom: 1px;
   color: #e3dddd;
   background-color: #2f3f52;
   }
-.marcusimg {
+.profil-bild {
   float: left; 
   margin: 10px;
   } 
