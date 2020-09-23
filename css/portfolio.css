@@ -11,7 +11,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: auto;
   grid-template-areas:
     "header header header"
     "main main main"
@@ -59,40 +59,72 @@ nav li a:hover {
 
 /* main börjar-----------------------------------------------------  */
 main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
   grid-area: main;
+  grid-template-areas:
+    "portcard-pic1 portcard-info1 portcard-info1"
+    "portcard-pic2 portcard-info2 portcard-info2"
+    "portcard-pic3 portcard-info3 portcard-info3"
+    "portcard-pic4 portcard-info4 portcard-info4";
+
+  padding: 5px;
+	margin-bottom: 10px;
 }
 
-.portcards {
-	display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  margin: 30px 120px;
+
+.portcard-pic1 {
+  grid-area: portcard-pic1;
+}  
+.portcard-pic2 {
+  grid-area: portcard-pic2;
+}
+.portcard-pic3 {
+  grid-area: portcard-pic3;
+}
+.portcard-pic4 {
+  grid-area: portcard-pic4;
+} 
+
+.portcard-info1{
+  grid-area: portcard-info1;
+} 
+.portcard-info2{
+  grid-area: portcard-info2;
+} 
+.portcard-info3{
+  grid-area: portcard-info3;
+} 
+.portcard-info4 {
+  grid-area: portcard-info4;
 }
 
-.port-one,
-.port-two,
-.port-three,
-.port-four {
-  display: flex;
-  flex-basis: auto;
-  flex-grow: 1;
-  margin-bottom: 20px;
-}
-.portcard-pic img {
-    height: 250px;
-    width: auto;
-    border-radius: 5px;
-}
-
-.portcard-info {
+.portcard-info1, 
+.portcard-info2, 
+.portcard-info3, 
+.portcard-info4  {
     background-color: #0E153A;
     color: white;
     height: 250px;
     margin-left: 30px;
     border-radius: 5px;
 }
-.portcard-info p {
+
+.portcard-pic1 img, 
+.portcard-pic2 img, 
+.portcard-pic3 img, 
+.portcard-pic4 img {
+    height: 250px;
+    width: auto;
+    border-radius: 5px;
+}
+
+.portcard-info1 p,
+.portcard-info2 p,
+.portcard-info3 p,
+.portcard-info4 p
+ {
   padding: 20px;
 }
 
