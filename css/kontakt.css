@@ -22,9 +22,10 @@ body {
 header {
   grid-area: header;
   background-color: #0e153a;
-  height: 10vh;
+  height: 100px;
 }
 .logo {
+  padding: 5px;
   height: 70px;
   margin-top: 10px;
   margin-left: 25px;
