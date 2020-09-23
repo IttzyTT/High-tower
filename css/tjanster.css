@@ -231,7 +231,7 @@ main p {
 .tjanster-losningar {
   grid-area: losningar;
   background-color: #0e153a;
-  padding: 0 100px;
+  padding: 50px;
   margin-bottom: 1px;
 }
 .losningar-logo {
@@ -242,8 +242,8 @@ main p {
 }
 .tjanster-losningar-titel {
   text-align: center;
-  padding-bottom: 5px;
-  padding-top: 40px;
+  padding-bottom: 20px;
+  padding-top: 30px;
 }
 .tjanster-boxar {
   border: 1px solid greenyellow;
@@ -251,7 +251,7 @@ main p {
   flex-wrap: wrap;
   justify-content: center;
   padding: 10px;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
 }
 .losningar {
   border: 1px solid rgb(255, 113, 47);
