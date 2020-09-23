@@ -10,15 +10,15 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 1fr;
   grid-template-areas:
-    "header header header"
-    "hero hero hero "
-    "main main main"
-    "footer footer footer";
-  height: 100vh;
+    "header header"
+    "main main"
+    "footer footer"; 
+    height: 93vh;
 }
+
 header {
   grid-area: header;
   background-color: #0e153a;
@@ -56,8 +56,47 @@ nav li a:hover {
 }
 /* Header / NAVBAR  ends ------------------------------------- */
 
+main{
+  grid-area: main;
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+ }
 
+ .form{
+   margin-left: 150px;
+   background-color: #0e153a;
+   color: white;
+ }
 
+ input{
+   margin-top: 10px;
+   margin-bottom: 10px;
+   height: 25px;
+   width:400px;
+ }
+
+ .messege{
+  height: 60px;
+  
+ }
+
+ button{
+  margin-top: 10px;
+  color: #e4960f;
+  background-color: #0e153a;
+  padding: 10px;
+ }
+
+ .map{
+   margin-left: 100px;
+   background-color: #0e153a;
+   color: white;
+ }
+
+ .mapcontact{
+  padding: 40px;
+ }
 
 /* FOOTER ------------------------------------- */
 footer {
