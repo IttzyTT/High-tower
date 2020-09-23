@@ -3,13 +3,6 @@ Uppgift 3 - Hemsida till High Tower AB (Igor Hillewie, Nandjatt, Anja)
 
 
 
-Vad erbjuder vi? 
-
-
-Grafisk profil 
-
-
-
 Planera och dela upp arbetet. 
 (Hem: Igor, Hillewie)
 (Tjänster: Igor)
@@ -18,5 +11,5 @@ Planera och dela upp arbetet.
 (Portfolio: Hillewie)
 
 
-Mockup.
-Finns i mockupmappen i github
+Profil och Mockup.
+Finns i mockupmappen 
