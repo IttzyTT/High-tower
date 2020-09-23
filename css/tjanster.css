@@ -13,11 +13,11 @@ body {
   grid-template-columns: repeat(1fr);
   grid-template-rows: repeat(5, 1fr);
   grid-template-areas:
-    "header header header"
-    "intro intro intro "
-    "tjanster tjanster tjanster"
-    "losningar losningar losningar"
-    "footer footer footer";
+    "header"
+    "intro "
+    "tjanster "
+    "losningar "
+    "footer ";
   height: 100vh;
 }
 header {
@@ -181,6 +181,7 @@ main p {
   grid-area: intro;
   background-color: #0e153a;
   margin-top: 1px;
+  padding-bottom: 20px;
 }
 
 .tjanster-intro-title {
@@ -189,9 +190,10 @@ main p {
   padding-top: 40px;
 }
 .tjanster-intro-text {
-  padding: 0 270px;
-  padding-bottom: 60px;
+  padding: 20px;
+  margin: 0 150px;
   line-height: 1.5;
+  border: 1px solid greenyellow;
 }
 
 /* Tjanster börjar--------------- */
@@ -200,7 +202,7 @@ main p {
   grid-area: tjanster;
   background-color: #0e153a93;
   display: flex;
-  padding: 50px 100px;
+  padding: 50px 50px;
   flex-wrap: wrap;
   justify-content: space-around;
 }
@@ -214,11 +216,15 @@ main p {
   text-align: center;
   padding-bottom: 20px;
 }
+.tjanster-text {
+  border: 1px solid greenyellow;
+}
 .tjanster-box {
-  /* border: 1px solid greenyellow; */
-  padding: 40px;
+  border: 1px solid greenyellow;
+  padding: 20px;
+  margin: 0 30px;
   height: 350px;
-  width: 500px;
+  width: 350px;
 }
 
 /* LÖSNINGAR börjar------------------- */
@@ -240,14 +246,15 @@ main p {
   padding-top: 40px;
 }
 .tjanster-boxar {
-  /* border: 1px solid greenyellow; */
+  border: 1px solid greenyellow;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   padding: 10px;
   padding-bottom: 50px;
 }
 .losningar {
-  /* border: 1px solid rgb(255, 113, 47); */
+  border: 1px solid rgb(255, 113, 47);
   padding: 50px;
   margin: 5px;
   width: 200px;
