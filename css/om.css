@@ -6,18 +6,7 @@
 body {
   background-color: #e2f3f5;
   font-family: poppins, sans-serif;
-}
 
-.container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-areas:
-    "header header header"
-    "hero hero hero "
-    "main main main"
-    "footer footer footer";
-  height: 100vh;
 }
 header {
   grid-area: header;
@@ -59,6 +48,11 @@ footer {
   grid-area: footer;
   background-color: #0e153a;
   height: 300px;
+  }
+.footer-links,
+.footer-contacts,
+.footer-partners {
+  height: 100px;
 }
 .footer-container {
   display: flex;
@@ -154,8 +148,46 @@ footer {
   color: whitesmoke;
   font-size: 20px;
 }
-
 .footer-map {
   height: 200px;
 }
 /* Footer ends ------------------------------------- */
+.container-om {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-areas:
+  "header header header"
+  "sections1 sections1 sections1"
+  "sections2 sections2 sections2"
+  "sections3 sections3 sections3"
+  "footer footer footer"
+}
+.sections1 {
+  grid-area: sections1;
+  padding: 50px ;
+  border: 2px solid #000;
+  margin-bottom: 10px;
+  color: #e3dddd;
+  background-color: #2f3f52 ;
+  }
+.sections2 {
+  grid-area: sections2;
+  padding: 50px ;
+  border: 2px solid #000;
+  margin-bottom: 10px;
+  color: #e3dddd;
+  background-color:#0e153a ;
+  }
+.sections3 {
+  grid-area: sections3;
+  padding: 50px ;
+  border: 2px solid #000;
+  margin-bottom: 10px;
+  color: #e3dddd;
+  background-color: #2f3f52;
+  }
+img {
+  float: left; 
+  margin: 10px;
+  }
