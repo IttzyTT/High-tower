@@ -180,7 +180,6 @@ main p {
 .tjanster-intro {
   grid-area: intro;
   background-color: #0e153a;
-  width: 100vw;
   margin-top: 1px;
 }
 

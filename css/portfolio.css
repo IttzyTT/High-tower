@@ -67,7 +67,7 @@ main {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin: 15px;
+  margin: 30px 120px;
 }
 
 .port-one,
@@ -77,18 +77,20 @@ main {
   display: flex;
   flex-basis: auto;
   flex-grow: 1;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .portcard-pic img {
     height: 250px;
     width: auto;
+    border-radius: 5px;
 }
 
 .portcard-info {
     background-color: #0E153A;
     color: white;
     height: 250px;
-    margin-left: 10px;
+    margin-left: 30px;
+    border-radius: 5px;
 }
 .portcard-info p {
   padding: 20px;
