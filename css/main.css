@@ -13,9 +13,9 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-template-areas:
-    "header header header"
+    "header header header "
     "hero hero hero "
-    "main main main"
+    "main main main "
     "footer footer footer";
   height: 93vh;
 }
@@ -49,17 +49,114 @@ nav ul li a {
   color: white;
   margin-right: 10px;
 }
+nav li a:hover {
+  color: #e4960f;
+  border-radius: 5px;
+}
 /* Header / NAVBAR  ends ------------------------------------- */
+/* FOOTER ------------------------------------- */
 footer {
   grid-area: footer;
-  padding: 5px;
   background-color: #0e153a;
   height: 300px;
 }
-.footer-links,
-.footer-contacts,
-.footer-partners {
-  height: 100px;
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+}
+.footer-box1 {
+  margin-top: 35px;
+  width: 230px;
+  height: 160px;
+}
+.footer-box2 {
+  margin-top: 30px;
+  height: 160px;
+}
+.footer-box3 {
+  margin-top: 30px;
+  width: 270px;
+  height: 160px;
+}
+/* BOX1--------------------------------- */
+.footer-box1 h3 {
+  margin-top: 8px;
+  margin-left: 10px;
+  text-align: left;
+  padding-bottom: 10px;
+  color: whitesmoke;
+  font-size: 20px;
+}
+.footer-box1 li {
+  list-style: none;
+  padding-bottom: 13px;
+}
+.footer-nav-links {
+  margin-top: 10px;
+}
+.footer-nav-link {
+  margin: 30px;
+  font-size: 14px;
+  font-weight: 200;
+  text-decoration: none;
+  color: whitesmoke;
+}
+.footer-box1 li a:hover {
+  color: #e4960f;
+  border-radius: 5px;
+}
+/* BOX2----------------------------------- */
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-contact-logos {
+  display: flex;
+  flex-direction: column;
+}
+.footer-contact-txt {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-box2 h3 {
+  margin-top: 8px;
+  margin-left: 10px;
+  text-align: left;
+  padding-bottom: 19px;
+  color: whitesmoke;
+  font-size: 20px;
+}
+.footer-box2 p {
+  margin-top: 10px;
+  margin-left: 15px;
+  text-align: left;
+  padding-bottom: 19px;
+  color: whitesmoke;
+  font-size: 14px;
+}
+
+.footer-contact-img {
+  display: block;
+  margin: auto 0;
+  margin-top: 5px;
+  margin-bottom: 19px;
+  height: 30px;
+}
+
+/* BOX3----------------------------------- */
+.footer-box3 h3 {
+  margin-top: 8px;
+  margin-left: 10px;
+  text-align: left;
+  padding-bottom: 10px;
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+.footer-map {
+  height: 200px;
 }
 /* Footer ends ------------------------------------- */
 
@@ -77,15 +174,15 @@ main {
 }
 .cards-logo {
   height: 100px;
-  margin-left: 90px;
-  margin-bottom: 10px;
+  margin-left: 100px;
+  margin-bottom: 20px;
 }
 .knapp-hem {
-  margin-top: 200px;
-  margin-left: 100px;
-  width: 100px;
+  margin-top: 170px;
+  margin-left: 90px;
+  width: 130px;
   height: 30px;
-  background-color: #3d5af1;
+  background-color: #3d5bf195;
   border-radius: 5px;
   border-style: none;
   color: whitesmoke;
@@ -96,7 +193,7 @@ main {
 }
 
 .card-one {
-  height: 40em;
+  height: 35em;
   background-color: #0e153a;
   color: white;
   padding: 35px;
@@ -104,7 +201,7 @@ main {
 
 .card-two,
 .card-three {
-  height: 40em;
+  height: 35em;
   margin-left: 2em;
   background-color: #0e153a;
   color: white;
