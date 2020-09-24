@@ -17,7 +17,7 @@ body {
     "sections2"
     "affarside "
     "footer";
-  height: 100vh; 
+  height: 100vh;
 }
 header {
   grid-area: header;
@@ -139,7 +139,7 @@ footer {
   margin-top: 10px;
   margin-left: 15px;
   text-align: left;
-  padding-bottom: 19px;
+  padding-bottom: 24px;
   color: whitesmoke;
   font-size: 14px;
 }
@@ -169,33 +169,33 @@ footer {
   padding: 80px;
   margin-bottom: 1px;
   color: #e3dddd;
-  background-color: #2f3f52 ;
-  }
+  background-color: #2f3f52;
+}
 .sections2 {
   display: flex;
   grid-area: sections2;
   padding: 80px;
   margin-bottom: 1px;
   color: #e3dddd;
-  background-color:#0e153a ;
-  }
-  .section2-img{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  .section2-img img{
-    margin-right: 20px;
-    height: 40px ;
-  }
+  background-color: #0e153a;
+}
+.section2-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.section2-img img {
+  margin-right: 20px;
+  height: 40px;
+}
 .affarside {
   grid-area: affarside;
-  padding: 80px ;
+  padding: 80px;
   margin-bottom: 1px;
   color: #e3dddd;
   background-color: #2f3f52;
-  }
+}
 .profil-bild {
-  float: left; 
+  float: left;
   margin: 10px;
-  } 
+}
