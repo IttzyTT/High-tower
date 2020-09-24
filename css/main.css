@@ -52,9 +52,86 @@ nav ul li a {
 }
 nav li a:hover {
   color: #e4960f;
-  border-radius: 5px;
 }
 /* Header / NAVBAR  ends ------------------------------------- */
+
+/* Main hem start--------------------------- */
+
+.hero {
+  grid-area: hero;
+  height: 550px;
+  background-image: url(/img/pexels-startup-stock-photos-7075.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+main {
+  grid-area: main;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "card-one card-two card-three";
+  padding: 5px;
+}
+.cards-logo {
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.cards-btn {
+  width: 150px;
+  height: 40px;
+  background-color: #3d5bf195;
+  border-radius: 5px;
+  border-style: none;
+  display: block;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.cards-btn a {
+  color: whitesmoke;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.cards-btn a:hover {
+  color: #e4960f;
+}
+.cards-title h2 {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 300;
+  color: white;
+}
+.cards-txt p {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 15px;
+  font-weight: 300;
+  color: white;
+}
+.card-one,
+.card-two,
+.card-three {
+  background-color: #0e153a;
+  padding: 35px;
+  margin: 10px 10px 20px 10px;
+}
+
+.partners {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+  margin-bottom: 1px;
+  background-color: #b1badab9;
+}
+
+.partner-img {
+  height: 50px;
+}
+
 /* FOOTER ------------------------------------- */
 footer {
   grid-area: footer;
@@ -157,70 +234,6 @@ footer {
 }
 
 .footer-map {
-  height: 200px;
+  width: 250px;
 }
 /* Footer ends ------------------------------------- */
-
-/* Main hem start--------------------------- */
-
-.hero {
-  grid-area: hero;
-  height: 550px;
-  background-image: url(/img/pexels-startup-stock-photos-7075.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-}
-main {
-  grid-area: main;
-}
-.cards-logo {
-  height: 100px;
-  margin-left: 100px;
-  margin-bottom: 20px;
-}
-.knapp-hem {
-  margin-top: 170px;
-  margin-left: 90px;
-  width: 130px;
-  height: 30px;
-  background-color: #3d5bf195;
-  border-radius: 5px;
-  border-style: none;
-  color: whitesmoke;
-}
-.cards {
-  display: flex;
-  padding: 2em;
-}
-
-.card-one {
-  height: 35em;
-  background-color: #0e153a;
-  color: white;
-  padding: 35px;
-}
-
-.card-two,
-.card-three {
-  height: 35em;
-  margin-left: 2em;
-  background-color: #0e153a;
-  color: white;
-  padding: 35px;
-}
-.partners {
-  display: flex;
-  justify-content: space-around;
-
-  margin-bottom: 1em;
-  height: 100px;
-  padding: 5px;
-  background-color: rgb(89, 155, 111);
-}
-.partner-one,
-.partner-two,
-.partner-three,
-.partner-four {
-  margin: 5px 0;
-  height: 100px;
-}
