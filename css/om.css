@@ -226,7 +226,6 @@ footer {
   .profil-bild {
   float: right;
   
-} 
 }
 /* On screens that are max 960px wide or less, */
 @media only screen and (max-width: 960px) {
@@ -234,10 +233,6 @@ footer {
     flex-direction: row;
     display: grid;
     flex-wrap: wrap;
-  }
-  .sections2 {
-    flex-direction: row;
-    display: flex;
   }
   /* On screens that are max 1200px wide or less, */
   @media only screen and (max-width: 1200px) {
@@ -248,7 +243,6 @@ footer {
     margin-bottom: 1px;
     color: #e3dddd;
     background-color: #2f3f52;
-  }
   }
   .sections2 {
     display: flex;
@@ -279,4 +273,3 @@ footer {
     margin: 10px;
   } 
 }
-
