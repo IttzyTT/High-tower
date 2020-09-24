@@ -134,7 +134,7 @@ footer {
   margin-top: 10px;
   margin-left: 15px;
   text-align: left;
-  padding-bottom: 19px;
+  padding-bottom: 24px;
   color: whitesmoke;
   font-size: 14px;
 }
@@ -191,20 +191,21 @@ main p {
 }
 .tjanster-intro-text {
   padding: 20px;
-  margin: 0 150px;
+  margin: 0 120px;
   line-height: 1.5;
-  border: 1px solid greenyellow;
+  /* border: 1px solid greenyellow; */
 }
 
-/* Tjanster börjar--------------- */
+/* Tjanster intro börjar--------------- */
 
 .tjanster {
   grid-area: tjanster;
   background-color: #0e153a93;
   display: flex;
-  padding: 50px 50px;
+  padding: 50px 7px;
   flex-wrap: wrap;
   justify-content: space-around;
+  /* border: 1px solid red; */
 }
 .tjanster-logo {
   height: 100px;
@@ -216,22 +217,20 @@ main p {
   text-align: center;
   padding-bottom: 20px;
 }
-.tjanster-text {
-  border: 1px solid greenyellow;
-}
+
 .tjanster-box {
-  border: 1px solid greenyellow;
-  padding: 20px;
-  margin: 0 30px;
+  /* border: 1px solid greenyellow; */
+  padding: 13px;
+  margin: 0 9px;
   height: 350px;
-  width: 350px;
+  width: 250px;
 }
 
 /* LÖSNINGAR börjar------------------- */
 .tjanster-losningar {
   grid-area: losningar;
   background-color: #0e153a;
-  padding: 0 100px;
+  padding: 0 10px;
   margin-bottom: 1px;
 }
 .losningar-logo {
@@ -245,17 +244,17 @@ main p {
   padding-bottom: 5px;
   padding-top: 40px;
 }
-.tjanster-boxar {
-  border: 1px solid greenyellow;
+.losningar-boxar {
+  /* border: 1px solid greenyellow; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 10px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
+  margin: 0 5px;
 }
 .losningar {
-  border: 1px solid rgb(255, 113, 47);
-  padding: 50px;
+  /* border: 1px solid rgb(255, 113, 47); */
+  padding: 40px;
   margin: 5px;
   width: 200px;
   height: 350px;
@@ -263,4 +262,134 @@ main p {
 .losningar-title {
   text-align: center;
   padding-bottom: 20px;
+}
+
+/* 
+  1. Breda desktop skärmar: större än 1200px
+  2. Mindre desktop skärmar: mellan 1200px och 960px
+  3. Tablets såsom Ipad: mellan 960px och 768px
+  4. Mobiltelefoner: mindre än 768px 
+  */
+/* MEDIA  */
+@media screen and (max-width: 1200px) {
+  .tjanster-intro-text {
+    padding: 20px;
+    margin: 0 80px;
+    line-height: 1.5;
+    /* border: 1px solid greenyellow; */
+  }
+  .tjanster-box {
+    margin: 0 60px;
+  }
+  /* losningar  */
+
+  .losningar {
+    /* border: 1px solid rgb(255, 113, 47); */
+    padding: 30px;
+    margin: 5px;
+    width: 200px;
+    height: 350px;
+  }
+}
+
+/* lösningar från 4 till 2 */
+@media screen and (max-width: 1119px) {
+  .losningar-boxar {
+    /* border: 1px solid greenyellow; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 140px;
+  }
+}
+/* -------------------------------------------------------------------- */
+/* Tablets såsom Ipad: mellan 960px och 768px */
+@media screen and (max-width: 960px) {
+  .logo {
+    padding: 5px;
+    height: 55px;
+    margin-top: 20px;
+    margin-left: 25px;
+  }
+  .tjanster-intro-title {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 20px;
+  }
+  .tjanster-intro-text {
+    font-size: 16px;
+    padding: 20px;
+    margin: 0 40px;
+    line-height: 1.5;
+    /* border: 1px solid greenyellow; */
+  }
+  main {
+    color: whitesmoke;
+  }
+  main h1 {
+    font-size: 30px;
+    font-weight: 300;
+  }
+  main h2 {
+    font-size: 26px;
+    font-weight: 300;
+  }
+  main p {
+    font-size: 16px;
+    font-weight: 300;
+  }
+  .tjanster-box {
+    margin: 0 49px;
+  }
+  .losningar-boxar {
+    /* border: 1px solid greenyellow; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 90px 30px 90px;
+  }
+  .losningar {
+    /* border: 1px solid rgb(255, 113, 47); */
+    padding: 30px 20px;
+    width: 200px;
+    height: 300px;
+  }
+}
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+/* Mobiltelefoner: mindre än 768px */
+@media screen and (max-width: 768px) {
+  .logo {
+    padding: 5px;
+    height: 40px;
+    margin-top: 25px;
+    margin-left: 25px;
+  }
+  .tjanster-intro-title {
+    text-align: center;
+    margin-bottom: 5px;
+    padding-top: 15px;
+  }
+  .tjanster-intro-text {
+    font-size: 16px;
+    padding: 20px;
+    margin: 0 40px;
+    line-height: 1.5;
+    /* border: 1px solid greenyellow; */
+  }
+  main {
+    color: whitesmoke;
+  }
+  main h1 {
+    font-size: 26px;
+    font-weight: 300;
+  }
+  main h2 {
+    font-size: 24px;
+    font-weight: 300;
+  }
+  main p {
+    font-size: 14px;
+    font-weight: 300;
+  }
 }
