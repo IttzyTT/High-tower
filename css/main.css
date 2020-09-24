@@ -237,3 +237,61 @@ footer {
   width: 250px;
 }
 /* Footer ends ------------------------------------- */
+
+/* 
+  1. Breda desktop skärmar: större än 1200px
+  2. Mindre desktop skärmar: mellan 1200px och 960px
+  3. Tablets såsom Ipad: mellan 960px och 768px
+  4. Mobiltelefoner: mindre än 768px 
+  */
+/* MEDIA  */
+@media screen and (max-width: 1200px) {
+  .partner-img {
+    height: 30px;
+  }
+}
+/* Tablets såsom Ipad: mellan 960px och 768px */
+@media screen and (max-width: 960px) {
+  .logo {
+    padding: 5px;
+    height: 55px;
+    margin-top: 20px;
+    margin-left: 25px;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "card-one" "card-two" "card-three";
+    padding: 5px;
+  }
+
+  .footer-map {
+    width: 200px;
+  }
+}
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+/* Mobiltelefoner: mindre än 768px */
+@media screen and (max-width: 768px) {
+  .logo {
+    padding: 5px;
+    height: 40px;
+    margin-top: 25px;
+    margin-left: 25px;
+  }
+  .partner-img {
+    height: 20px;
+  }
+  .footer-map {
+    width: 150px;
+  }
+  .footer-box2 p {
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: left;
+    padding-bottom: 24px;
+    color: whitesmoke;
+    font-size: 12px;
+  }
+}
