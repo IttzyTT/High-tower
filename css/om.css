@@ -160,7 +160,7 @@ footer {
   font-size: 20px;
 }
 .footer-map {
-  height: 200px;
+  width: 250px;
 }
 /* Footer ends ------------------------------------- */
 .historia {
@@ -169,7 +169,7 @@ footer {
   padding: 80px;
   margin-bottom: 1px;
   color: #e3dddd;
-  background-color: #2f3f52;
+  background-color: #0e153a93;
 }
 .sections2 {
   display: flex;
@@ -193,9 +193,84 @@ footer {
   padding: 80px;
   margin-bottom: 1px;
   color: #e3dddd;
-  background-color: #2f3f52;
+  background-color: #0e153a93;
 }
 .profil-bild {
+  height: 200px;
   float: left;
   margin: 10px;
+}
+/* On screens that are max 768px wide or less, */
+@media screen and (max-width: 768px) {
+  .historia {
+    flex-direction: row;
+    display: grid;
+    flex-wrap: wrap;
+  }
+  .sections2 {
+    flex-direction: row;
+    display: flex;
+  }
+  .affarside {
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section2-img {
+    flex-direction: column;
+  }
+  .section2-img img {
+    margin-right: 20px;
+    height: 40px;
+  }
+  .profil-bild {
+    float: right;
+  }
+}
+/* On screens that are max 960px wide or less, */
+@media only screen and (max-width: 960px) {
+  .historia {
+    flex-direction: row;
+    display: grid;
+    flex-wrap: wrap;
+  }
+}
+/* On screens that are max 1200px wide or less, */
+@media only screen and (max-width: 1200px) {
+  .historia {
+    margin-top: 1px;
+    grid-area: historia;
+    padding: 80px;
+    margin-bottom: 1px;
+    color: #e3dddd;
+    background-color: #2f3f52;
+  }
+  .sections2 {
+    display: flex;
+    grid-area: sections2;
+    padding: 80px;
+    margin-bottom: 1px;
+    color: #e3dddd;
+    background-color: #0e153a;
+  }
+  .section2-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .section2-img img {
+    margin-right: 20px;
+    height: 40px;
+  }
+  .affarside {
+    grid-area: affarside;
+    padding: 80px;
+    margin-bottom: 1px;
+    color: #e3dddd;
+    background-color: #2f3f52;
+  }
+  .profil-bild {
+    float: left;
+    margin: 10px;
+  }
 }
