@@ -160,7 +160,7 @@ footer {
   font-size: 20px;
 }
 .footer-map {
-  height: 200px;
+  width: 250px;
 }
 /* Footer ends ------------------------------------- */
 .historia {
@@ -198,14 +198,13 @@ footer {
 .profil-bild {
   float: left;
   margin: 10px;
-
-  } 
-  /* On screens that are 600px wide or less, the background color is olive */
+}
+/* On screens that are 600px wide or less, the background color is olive */
 @media screen and (max-width: 600px) {
   body {
     background-color: olive;
     color: white;
-} 
+  }
 }
 /* On screens that are 992px wide or less, the background color is blue */
 @media screen and (max-width: 992px) {
@@ -216,7 +215,7 @@ footer {
 }
 @media only screen and (min-width: 992px) {
   body {
-    background-color:orange;
+    background-color: orange;
     color: white;
   }
 }
@@ -227,4 +226,3 @@ footer {
     color: white;
   }
 }
-
