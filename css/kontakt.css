@@ -15,8 +15,8 @@ body {
   grid-template-areas:
     "header header"
     "main main"
-    "footer footer"; 
-    height: 93vh;
+    "footer footer";
+  height: 93vh;
 }
 
 header {
@@ -56,47 +56,46 @@ nav li a:hover {
 }
 /* Header / NAVBAR  ends ------------------------------------- */
 
-main{
+main {
   grid-area: main;
   display: flex;
   flex-direction: row;
   padding: 50px;
- }
+}
 
- .form{
-   margin-left: 150px;
-   background-color: #0e153a;
-   color: white;
- }
+.form {
+  margin-left: 150px;
+  background-color: #0e153a;
+  color: white;
+}
 
- input{
-   margin-top: 10px;
-   margin-bottom: 10px;
-   height: 25px;
-   width:400px;
- }
+input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 25px;
+  width: 400px;
+}
 
- .messege{
+.messege {
   height: 60px;
-  
- }
+}
 
- button{
+button {
   margin-top: 10px;
   color: #e4960f;
   background-color: #0e153a;
   padding: 10px;
- }
+}
 
- .map{
-   margin-left: 100px;
-   background-color: #0e153a;
-   color: white;
- }
+.map {
+  margin-left: 100px;
+  background-color: #0e153a;
+  color: white;
+}
 
- .mapcontact{
+.mapcontact {
   padding: 40px;
- }
+}
 
 /* FOOTER ------------------------------------- */
 footer {
@@ -176,7 +175,7 @@ footer {
   margin-top: 10px;
   margin-left: 15px;
   text-align: left;
-  padding-bottom: 19px;
+  padding-bottom: 24px;
   color: whitesmoke;
   font-size: 14px;
 }

@@ -70,13 +70,12 @@ main {
     "portcard-pic4 portcard-info4 portcard-info4";
 
   padding: 5px;
-	margin-bottom: 10px;
+  margin-bottom: 10px;
 }
-
 
 .portcard-pic1 {
   grid-area: portcard-pic1;
-}  
+}
 .portcard-pic2 {
   grid-area: portcard-pic2;
 }
@@ -85,50 +84,47 @@ main {
 }
 .portcard-pic4 {
   grid-area: portcard-pic4;
-} 
+}
 
-.portcard-info1{
+.portcard-info1 {
   grid-area: portcard-info1;
-} 
-.portcard-info2{
+}
+.portcard-info2 {
   grid-area: portcard-info2;
-} 
-.portcard-info3{
+}
+.portcard-info3 {
   grid-area: portcard-info3;
-} 
+}
 .portcard-info4 {
   grid-area: portcard-info4;
 }
 
-.portcard-info1, 
-.portcard-info2, 
-.portcard-info3, 
-.portcard-info4  {
-    background-color: #0E153A;
-    color: white;
-    height: 250px;
-    margin-left: 30px;
-    border-radius: 5px;
+.portcard-info1,
+.portcard-info2,
+.portcard-info3,
+.portcard-info4 {
+  background-color: #0e153a;
+  color: white;
+  height: 250px;
+  margin-left: 30px;
+  border-radius: 5px;
 }
 
-.portcard-pic1 img, 
-.portcard-pic2 img, 
-.portcard-pic3 img, 
+.portcard-pic1 img,
+.portcard-pic2 img,
+.portcard-pic3 img,
 .portcard-pic4 img {
-    height: 250px;
-    width: auto;
-    border-radius: 5px;
+  height: 250px;
+  width: auto;
+  border-radius: 5px;
 }
 
 .portcard-info1 p,
 .portcard-info2 p,
 .portcard-info3 p,
-.portcard-info4 p
- {
+.portcard-info4 p {
   padding: 20px;
 }
-
-
 
 /* main slutar-----------------------------------------------------  */
 
@@ -210,7 +206,7 @@ footer {
   margin-top: 10px;
   margin-left: 15px;
   text-align: left;
-  padding-bottom: 19px;
+  padding-bottom: 24px;
   color: whitesmoke;
   font-size: 14px;
 }
