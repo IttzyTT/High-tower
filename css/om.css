@@ -198,31 +198,78 @@ footer {
 .profil-bild {
   float: left;
   margin: 10px;
-}
-/* On screens that are 600px wide or less, the background color is olive */
-@media screen and (max-width: 600px) {
-  body {
-    background-color: olive;
-    color: white;
+
+  } 
+  /* On screens that are max 768px wide or less, */
+@media screen and (max-width: 768px) {
+  .historia {
+    flex-direction: row;
+    display: grid;
+    flex-wrap: wrap;
   }
-}
-/* On screens that are 992px wide or less, the background color is blue */
-@media screen and (max-width: 992px) {
-  body {
-    background-color: blue;
-    color: white;
+  .sections2 {
+    flex-direction: row;
+    display: flex;
   }
-}
-@media only screen and (min-width: 992px) {
-  body {
-    background-color: orange;
-    color: white;
+  .affarside {
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
   }
-}
-/* On screens that are 600px wide or less, the background color is olive */
-@media only screen and (min-width: 1200px) {
-  body {
-    background-color: rosybrown;
-    color: white;
+  .section2-img {
+    flex-direction: column;
   }
+  .section2-img img {
+    margin-right: 20px;
+    height: 40px;
+  }
+  .profil-bild {
+  float: right;
+  
+}
+/* On screens that are max 960px wide or less, */
+@media only screen and (max-width: 960px) {
+  .historia {
+    flex-direction: row;
+    display: grid;
+    flex-wrap: wrap;
+  }
+  /* On screens that are max 1200px wide or less, */
+  @media only screen and (max-width: 1200px) {
+  .historia {
+    margin-top: 1px;
+    grid-area: historia;
+    padding: 80px;
+    margin-bottom: 1px;
+    color: #e3dddd;
+    background-color: #2f3f52;
+  }
+  .sections2 {
+    display: flex;
+    grid-area: sections2;
+    padding: 80px;
+    margin-bottom: 1px;
+    color: #e3dddd;
+    background-color: #0e153a;
+}
+  .section2-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .section2-img img {
+    margin-right: 20px;
+    height: 40px;
+  }
+  .affarside {
+    grid-area: affarside;
+    padding: 80px;
+    margin-bottom: 1px;
+    color: #e3dddd;
+    background-color: #2f3f52;
+  }
+  .profil-bild {
+    float: left;
+    margin: 10px;
+  } 
 }
