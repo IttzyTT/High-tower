@@ -196,6 +196,7 @@ footer {
   background-color: #2f3f52;
 }
 .profil-bild {
+  height: 200px;
   float: left;
   margin: 10px;
 
