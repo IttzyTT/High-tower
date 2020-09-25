@@ -121,9 +121,7 @@ font-size: 40px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 40px;
-  width: 80%;
-  
-  
+  width: 80%; 
 }
 
 /* FOOTER ------------------------------------- */
@@ -231,3 +229,53 @@ footer {
   width: 250px;
 }
 /* Footer ends ------------------------------------- */
+
+
+/*Tablets mellan 960-768 px*/
+
+main {
+  flex-wrap: wrap;
+  
+}
+
+.formsection{
+margin: auto;
+}
+
+.map {
+  margin: auto;
+  margin-top: 30px;
+}
+
+
+/* Mobiltelefoner: mindre än 768px */
+
+@media screen and (max-width: 768px) {
+ 
+  .logo {
+    padding: 5px;
+    height: 40px;
+    margin-top: 25px;
+    margin-left: 25px;
+  }
+  
+  .footer-box1{
+    margin-left: 40px;
+    margin-top: 10px;
+  }
+
+  .footer-box2 {
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: left;
+    padding-bottom: 24px;
+    font-size: 12px;
+  }
+  .footer-box3{
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+  .footer-map {
+    width: 150px;;
+  }
+}
