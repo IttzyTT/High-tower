@@ -95,9 +95,12 @@ main {
   color: whitesmoke;
   border-radius: 5px;
   text-decoration: none;
+  padding: 10px 50px;
 }
 .cards-btn a:hover {
-  color: #e4960f;
+  color: whitesmoke;
+  padding: 10px 50px;
+  background-color: #e4960f;
 }
 .cards-title h2 {
   font-size: 24px;

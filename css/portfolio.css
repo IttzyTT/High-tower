@@ -59,72 +59,38 @@ nav li a:hover {
 
 /* main börjar-----------------------------------------------------  */
 main {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
   grid-area: main;
-  grid-template-areas:
-    "portcard-pic1 portcard-info1 portcard-info1"
-    "portcard-pic2 portcard-info2 portcard-info2"
-    "portcard-pic3 portcard-info3 portcard-info3"
-    "portcard-pic4 portcard-info4 portcard-info4";
-
-  padding: 5px;
-  margin-bottom: 10px;
+  display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
 }
 
-.portcard-pic1 {
-  grid-area: portcard-pic1;
+.portone,
+.porttwo,
+.portthree,
+.portfour {
+  display: flex;
+  flex-basis: auto;
+  flex-grow: 1;
+  margin: 20px 200px;
 }
-.portcard-pic2 {
-  grid-area: portcard-pic2;
-}
-.portcard-pic3 {
-  grid-area: portcard-pic3;
-}
-.portcard-pic4 {
-  grid-area: portcard-pic4;
+.portone p{
+
 }
 
-.portcard-info1 {
-  grid-area: portcard-info1;
-}
-.portcard-info2 {
-  grid-area: portcard-info2;
-}
-.portcard-info3 {
-  grid-area: portcard-info3;
-}
-.portcard-info4 {
-  grid-area: portcard-info4;
-}
-
-.portcard-info1,
-.portcard-info2,
-.portcard-info3,
-.portcard-info4 {
-  background-color: #0e153a;
-  color: white;
-  height: 250px;
-  margin-left: 30px;
-  border-radius: 5px;
-}
-
-.portcard-pic1 img,
-.portcard-pic2 img,
-.portcard-pic3 img,
-.portcard-pic4 img {
+.portcard-pic {
   height: 250px;
   width: auto;
   border-radius: 5px;
 }
-
-.portcard-info1 p,
-.portcard-info2 p,
-.portcard-info3 p,
-.portcard-info4 p {
-  padding: 20px;
+.portcard {
+  background-color: #0e153a;
+  color: white;
+  height: 250px;
+  margin-left: 20px;
+  border-radius: 5px;
 }
+
 
 /* main slutar-----------------------------------------------------  */
 
@@ -233,3 +199,43 @@ footer {
   width: 250px;
 }
 /* Footer ends ------------------------------------- */
+
+/* @media query ------------------------------------- */
+
+/* midre desktop skärmar 960-1200 */
+@media screen and (min-width: 960px) and (max-width: 1200px) {
+	.container {
+	  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+  }
+}
+/* Tablet skärmar 768-960 */
+@media screen and (min-width: 768px) and (max-width: 960px){
+	.container {
+	  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+	}
+}
+
+/* Mobil skärmar max 768 */
+@media screen and (max-width: 768px){
+	.container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+	}
+}
