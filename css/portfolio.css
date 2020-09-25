@@ -60,25 +60,26 @@ nav li a:hover {
 /* main börjar-----------------------------------------------------  */
 main {
   grid-area: main;
-  display: flex;
+}
+.content {
+  grid-area: content;
+	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
 }
-
-.portone,
-.porttwo,
-.portthree,
-.portfour {
+.portcard-1,
+.portcard-2,
+.portcard-3,
+.portcard-4 {
   display: flex;
+}
+
+.portcard {
   flex-basis: auto;
   flex-grow: 1;
-  margin: 20px 200px;
 }
-.portone p{
-
-}
-
 .portcard-pic {
+  display: flex;
   height: 250px;
   width: auto;
   border-radius: 5px;
@@ -218,12 +219,12 @@ footer {
 @media screen and (min-width: 768px) and (max-width: 960px){
 	.container {
 	  display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     grid-template-areas:
-    "header header header"
-    "main main main"
-    "footer footer footer";
+    "header header"
+    "main main"
+    "footer footer";
 	}
 }
 
@@ -231,7 +232,7 @@ footer {
 @media screen and (max-width: 768px){
 	.container {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas:
       "header"
