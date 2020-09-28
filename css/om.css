@@ -214,7 +214,8 @@ footer {
 .historia {
   margin-top: 1px;
   grid-area: historia;
-  padding: 80px;
+  padding: 90px;
+  
   margin-bottom: 1px;
   color: whitesmoke;
   background-color: #0e153a93;
@@ -247,9 +248,12 @@ footer {
 .historia-img {
   float: left;
   margin-right: 20px;
+  
+  
 }
 .profil-bild {
   height: 300px;
+
 }
 .historia-text{
   margin-bottom: 100px;
