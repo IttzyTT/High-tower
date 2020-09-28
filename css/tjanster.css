@@ -209,6 +209,7 @@ main p {
   padding: 50px 7px;
   flex-wrap: wrap;
   justify-content: space-around;
+  min-height: 550px;
   /* border: 1px solid red; */
 }
 .tjanster-logo {
@@ -221,15 +222,19 @@ main p {
   text-align: center;
   padding-bottom: 20px;
 }
-.tjanster-text {
-  text-align: center;
+.tjanster-text p {
+  margin-bottom: 20px;
 }
-
+.tjanster-text ul li {
+  font-size: 16px;
+  font-weight: 200;
+  margin-left: 20px;
+  padding: 3px;
+}
 .tjanster-box {
-  /* border: 1px solid greenyellow; */
   padding: 13px;
   margin: 0 9px;
-  height: 350px;
+
   width: 250px;
 }
 
@@ -248,22 +253,19 @@ main p {
 }
 .tjanster-losningar-titel {
   text-align: center;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
   padding-top: 30px;
 }
 .losningar-boxar {
-  /* border: 1px solid greenyellow; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding-bottom: 10px;
 }
 .losningar {
-  /* border: 1px solid rgb(255, 113, 47); */
   padding: 10px;
   margin: 0 10px;
   width: 200px;
-  height: 300px;
 }
 .losningar-title {
   text-align: center;
@@ -271,7 +273,8 @@ main p {
 }
 .losningar-txt p {
   text-align: center;
-  font-size: 15px;
+  font-size: 14px;
+  line-height: 1.3em;
 }
 
 /* 
@@ -288,6 +291,7 @@ main p {
     line-height: 1.5;
     /* border: 1px solid greenyellow; */
   }
+
   .tjanster-box {
     margin: 0 60px;
   }
