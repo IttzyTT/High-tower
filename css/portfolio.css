@@ -134,12 +134,12 @@ main {
     text-align: left;
 }
 .card-two h1 {
-    font-size: 3.9em;
-    padding: 50px 40px 2px 40px;
+    font-size: 3em;
+    padding: 30px 40px 0px 40px;
 }
 .card-two p {
   font-size: 1.1em;
-  padding: 20px 40px 0px 40px;
+  padding: 0px 40px 0px 40px;
   margin-bottom: 20px;
 }
 .card-btn a {
@@ -274,18 +274,27 @@ footer {
 /* midre desktop skärmar 960-1200 */
 @media screen and (min-width: 960px) and (max-width: 1200px) {
 	.container {
-	  display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas:
-    "header"
-    "main"
-    "footer";
-  }
-  .infocard {
-    grid-area: infocard;
-    padding: 60px 150px 60px 150px;
-  } 
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: auto;
+      grid-template-areas:
+      "header"
+      "main"
+      "footer";
+    }
+    .infocard {
+      grid-area: infocard;
+      padding: 60px 150px 60px 150px;
+    } 
+    .card-two h1{
+      font-size: 2.4em;
+      padding: 10px 20px 0px 40px;
+    }
+    .card-two p {
+      font-size: 1.1em;
+      padding: 0px 20px 0px 40px;
+
+    }
 }
 /* Tablet skärmar 768-960 */
 @media screen and (min-width: 768px) and (max-width: 960px){
@@ -301,6 +310,15 @@ footer {
   .infocard {
     grid-area: infocard;
     padding: 70px 120px 70px 120px;
+  }
+  .card-two h1{
+    font-size: 2em;
+    padding: 10px 20px 0px 40px;
+  }
+  .card-two p {
+    font-size: 1em;
+    padding: 0px 20px 0px 40px;
+    margin-bottom: 20px;
   }
 }
 
@@ -318,5 +336,21 @@ footer {
   .infocard {
     grid-area: infocard;
     padding: 50px 80px 50px 80px;
+  }
+  .card-one {
+    width: 100%;
+  }
+  .card-two {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+  .card-two h1{
+    font-size: 3.2em;
+    padding: 10px 20px 0px 40px;
+  }
+  .card-two p {
+    font-size: 1.1em;
+    padding: 0px 20px 0px 40px;
+    margin-bottom: 20px;
   }
 }
