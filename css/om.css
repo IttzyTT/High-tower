@@ -168,7 +168,7 @@ footer {
   grid-area: historia;
   padding: 80px;
   margin-bottom: 1px;
-  color: #e3dddd;
+  color: whitesmoke;
   background-color: #0e153a93;
 }
 .sections2 {
@@ -176,7 +176,7 @@ footer {
   grid-area: sections2;
   padding: 80px;
   margin-bottom: 1px;
-  color: #e3dddd;
+  color: whitesmoke;
   background-color: #0e153a;
 }
 .section2-img {
@@ -192,7 +192,7 @@ footer {
   grid-area: affarside;
   padding: 80px;
   margin-bottom: 1px;
-  color: #e3dddd;
+  color: whitesmoke;
   background-color: #0e153a93;
 }
 .profil-bild {
@@ -200,77 +200,63 @@ footer {
   float: left;
   margin: 10px;
 }
-/* On screens that are max 768px wide or less, */
-@media screen and (max-width: 768px) {
-  .historia {
-    flex-direction: row;
-    display: grid;
-    flex-wrap: wrap;
-  }
-  .sections2 {
-    flex-direction: row;
-    display: flex;
-  }
-  .affarside {
-    flex-direction: column;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .section2-img {
-    flex-direction: column;
-  }
-  .section2-img img {
-    margin-right: 20px;
-    height: 40px;
-  }
-  .profil-bild {
-    float: right;
-  }
-}
-/* On screens that are max 960px wide or less, */
-@media only screen and (max-width: 960px) {
-  .historia {
-    flex-direction: row;
-    display: grid;
-    flex-wrap: wrap;
-  }
-}
-/* On screens that are max 1200px wide or less, */
+/* På skärmar som är max 1200px breda eller mindre, Mindre desktop skärmar */
 @media only screen and (max-width: 1200px) {
-  .historia {
-    margin-top: 1px;
-    grid-area: historia;
-    padding: 80px;
-    margin-bottom: 1px;
-    color: #e3dddd;
-    background-color: #2f3f52;
+  .main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    "header"
+    "historia"
+    "sections2"
+    "affarside "
+    "footer";
   }
-  .sections2 {
-    display: flex;
-    grid-area: sections2;
-    padding: 80px;
-    margin-bottom: 1px;
-    color: #e3dddd;
-    background-color: #0e153a;
+}
+/* På skärmar som är 960px breda eller mindre, Tablets såsom Ipad */
+@media only screen and (max-width: 960px) {
+  .container {
+  display: grid;
+  grid-template-columns: 1fr ;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header"
+    "historia historia"
+    "sections2 sections2"
+    "affarside affarside"
+    "footer footer";
+}
+.logo {
+    padding: 5px;
+    height: 55px;
+    margin-top: 20px;
+    margin-left: 25px;
   }
-  .section2-img {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  .footer-map{
+    width: 150px;
   }
-  .section2-img img {
-    margin-right: 20px;
+}
+/*På skärmar som är max 768px breda eller mindre, Mobiltelefoner */ 
+@media screen and (max-width: 768px) {
+  .container {
+  display: grid;
+  grid-template-columns: 1fr ;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header"
+    "historia"
+    "sections2"
+    "affarside"
+    "footer";
+}
+.logo {
+    padding: 5px;
     height: 40px;
+    margin-top: 25px;
+    margin-left: 25px;
   }
-  .affarside {
-    grid-area: affarside;
-    padding: 80px;
-    margin-bottom: 1px;
-    color: #e3dddd;
-    background-color: #2f3f52;
-  }
-  .profil-bild {
-    float: left;
-    margin: 10px;
+  .footer-map{
+    width: 150px;
   }
 }
