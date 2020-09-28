@@ -10,12 +10,12 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-template-rows: auto;
   grid-template-areas:
-    "header header header"
-    "main main main"
-    "footer footer footer";
+    "header"
+    "main"
+    "footer";
   height: 100vh;
 }
 header {
@@ -61,35 +61,102 @@ nav li a:hover {
 main {
   grid-area: main;
 }
+
+.infocard {
+  grid-area: infocard;
+  padding: 80px 220px 80px 220px;
+  margin-top: 1px;
+  color: white;
+  background-color: #0e153a93;
+  justify-content: center;
+}
+
 .content {
   grid-area: content;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
 }
+
 .portcard-1,
 .portcard-2,
 .portcard-3,
 .portcard-4 {
   display: flex;
+  margin: 10px 20px;
 }
 
 .portcard {
-  flex-basis: auto;
-  flex-grow: 1;
+  flex: 1 1 250px;
 }
+
 .portcard-pic {
   display: flex;
-  height: 250px;
+  max-height: 250px;
   width: auto;
   border-radius: 5px;
 }
 .portcard {
   background-color: #0e153a;
   color: white;
-  height: 250px;
+  max-height: 250px;
   margin-left: 20px;
   border-radius: 5px;
+}
+
+.portcard-1 p,
+.portcard-2 p,
+.portcard-3 p,
+.portcard-4 p {
+  padding: 20px;
+}
+
+.recention-card {
+  grid-area: recention-card;
+  width: 100%;
+  margin-bottom: 1px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-one {
+    display: flex;
+    width: 50%;
+}
+#card-img {
+  width: 100%;
+}
+.card-two {
+    float: right;
+    width: 50%;
+    color: white;
+    background-color: #0e153a93;
+    text-align: left;
+}
+.card-two h1 {
+    font-size: 3.9em;
+    padding: 50px 40px 2px 40px;
+}
+.card-two p {
+  font-size: 1.1em;
+  padding: 20px 40px 0px 40px;
+  margin-bottom: 20px;
+}
+.card-btn a {
+  color: whitesmoke;
+  background-color: #3d5bf195;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px 20px;
+  display: block;
+
+  width: 100px;
+  margin-left: 40px;
+}
+.card-btn a:hover {
+  color: whitesmoke;
+  background-color: #e4960f;
 }
 
 
@@ -201,42 +268,55 @@ footer {
 }
 /* Footer ends ------------------------------------- */
 
+
 /* @media query ------------------------------------- */
 
 /* midre desktop skärmar 960-1200 */
 @media screen and (min-width: 960px) and (max-width: 1200px) {
 	.container {
 	  display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
     grid-template-areas:
-    "header header header"
-    "main main main"
-    "footer footer footer";
+    "header"
+    "main"
+    "footer";
   }
+  .infocard {
+    grid-area: infocard;
+    padding: 60px 150px 60px 150px;
+  } 
 }
 /* Tablet skärmar 768-960 */
 @media screen and (min-width: 768px) and (max-width: 960px){
 	.container {
 	  display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
     grid-template-areas:
-    "header header"
-    "main main"
-    "footer footer";
-	}
+    "header"
+    "main"
+    "footer";
+  }
+  .infocard {
+    grid-area: infocard;
+    padding: 70px 120px 70px 120px;
+  }
 }
 
 /* Mobil skärmar max 768 */
 @media screen and (max-width: 768px){
 	.container {
-    display: grid;
-    grid-template-columns: 1fr;
+	  display: grid;
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
     grid-template-areas:
-      "header"
-      "main"
-      "footer";
-	}
+    "header"
+    "main"
+    "footer";
+  }
+  .infocard {
+    grid-area: infocard;
+    padding: 50px 80px 50px 80px;
+  }
 }
