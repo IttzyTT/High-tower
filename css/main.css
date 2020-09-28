@@ -10,13 +10,13 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
   grid-template-areas:
-    "header header header "
-    "hero hero hero "
-    "main main main "
-    "footer footer footer";
+    "header"
+    "hero"
+    "main"
+    "footer";
   height: 93vh;
 }
 header {
@@ -52,6 +52,9 @@ nav ul li a {
 }
 nav li a:hover {
   color: #e4960f;
+}
+.current {
+  border-bottom: 1px solid #e4960f;
 }
 /* Header / NAVBAR  ends ------------------------------------- */
 /* Drop down button starts */
@@ -337,6 +340,13 @@ footer {
     height: 40px;
     margin-top: 25px;
     margin-left: 25px;
+  }
+  .hero {
+    background-image: url(/img/pexels-startup-stock-photos-7075.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 400px;
   }
   .partner-img {
     height: 20px;
