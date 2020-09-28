@@ -199,73 +199,86 @@ footer {
   float: left;
   margin-right: 20px;
 }
-.profil-bild{
-height: 300px;
+.profil-bild {
+  height: 300px;
 }
-h3{
+
+main h1 {
+  font-size: 32px;
+  font-weight: 200;
+}
+main h3 {
+  font-size: 24px;
+  font-weight: 200;
+  margin-top: 10px;
+}
+main h4 {
+  font-size: 20px;
+  font-weight: 200;
   margin-bottom: 10px;
 }
-h4{
-  margin-top: 10px;
+main p {
+  font-size: 16px;
+  font-weight: 300;
 }
 
 /* På skärmar som är max 1200px breda eller mindre, Mindre desktop skärmar */
 @media only screen and (max-width: 1200px) {
   .main {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(5, 1fr);
-  grid-template-areas:
-    "header"
-    "historia"
-    "sections2"
-    "affarside "
-    "footer";
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+      "header"
+      "historia"
+      "sections2"
+      "affarside "
+      "footer";
   }
 }
 /* På skärmar som är 960px breda eller mindre, Tablets såsom Ipad */
 @media only screen and (max-width: 960px) {
   .container {
-  display: grid;
-  grid-template-columns: 1fr ;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "header header"
-    "historia historia"
-    "sections2 sections2"
-    "affarside affarside"
-    "footer footer";
-}
-.logo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header header"
+      "historia historia"
+      "sections2 sections2"
+      "affarside affarside"
+      "footer footer";
+  }
+  .logo {
     padding: 5px;
     height: 55px;
     margin-top: 20px;
     margin-left: 25px;
   }
-  .footer-map{
+  .footer-map {
     width: 150px;
   }
 }
-/*På skärmar som är max 768px breda eller mindre, Mobiltelefoner */ 
+/*På skärmar som är max 768px breda eller mindre, Mobiltelefoner */
 @media screen and (max-width: 768px) {
   .container {
-  display: grid;
-  grid-template-columns: 1fr ;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "header"
-    "historia"
-    "sections2"
-    "affarside"
-    "footer";
-}
-.logo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header"
+      "historia"
+      "sections2"
+      "affarside"
+      "footer";
+  }
+  .logo {
     padding: 5px;
     height: 40px;
     margin-top: 25px;
     margin-left: 25px;
   }
-  .footer-map{
+  .footer-map {
     width: 150px;
   }
 }
