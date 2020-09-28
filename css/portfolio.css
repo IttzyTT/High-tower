@@ -332,6 +332,12 @@ footer {
     padding: 0px 20px 0px 40px;
     margin-bottom: 20px;
   }
+  .logo {
+    padding: 5px;
+    height: 55px;
+    margin-top: 20px;
+    margin-left: 25px;
+  }
 }
 
 /* Mobil skärmar max 768 */
@@ -345,9 +351,25 @@ footer {
       "main"
       "footer";
   }
+  .logo {
+    padding: 5px;
+    height: 40px;
+    margin-top: 25px;
+    margin-left: 25px;
+  }
+  .portcard {
+    font-size: 1.5em;
+  }
   .infocard {
     grid-area: infocard;
     padding: 50px 80px 50px 80px;
+  }
+  .infocard h4 {
+    font-size: 2em;
+  }
+
+  .infocard p{
+    font-size: 1.5em;
   }
   .card-one {
     width: 100%;
@@ -361,8 +383,11 @@ footer {
     padding: 10px 20px 0px 40px;
   }
   .card-two p {
-    font-size: 1.1em;
+    font-size: 1.5em;
     padding: 0px 20px 0px 40px;
     margin-bottom: 20px;
+  }
+  .portcard-pic {
+    display: none;
   }
 }
