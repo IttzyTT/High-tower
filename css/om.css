@@ -195,11 +195,20 @@ footer {
   color: whitesmoke;
   background-color: #0e153a93;
 }
-.profil-bild {
-  height: 200px;
+.historia-img {
   float: left;
-  margin: 10px;
+  margin-right: 20px;
 }
+.profil-bild{
+height: 300px;
+}
+h3{
+  margin-bottom: 10px;
+}
+h4{
+  margin-top: 10px;
+}
+
 /* På skärmar som är max 1200px breda eller mindre, Mindre desktop skärmar */
 @media only screen and (max-width: 1200px) {
   .main {
