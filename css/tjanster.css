@@ -56,6 +56,51 @@ nav li a:hover {
   border-radius: 5px;
 }
 /* Header / NAVBAR  ends ------------------------------------- */
+/* Drop down button starts */
+.dropbtn {
+  background-color: #e4960f;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  width: 100px;
+  border-radius: 5px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0; 
+
+  background-color: #f1f1f1;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 2px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #e4960fba;
+  color: whitesmoke;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: whitesmoke;
+  color: #e4960f;
+}
+.dropdown {
+  display: none;
+}
 /* FOOTER ------------------------------------- */
 footer {
   grid-area: footer;
@@ -309,6 +354,12 @@ main p {
 /* -------------------------------------------------------------------- */
 /* Tablets såsom Ipad: mellan 960px och 768px */
 @media screen and (max-width: 960px) {
+  nav ul li{
+    display: none;
+  }
+  .dropdown {
+  display: inline;
+}
   .logo {
     padding: 5px;
     height: 55px;
