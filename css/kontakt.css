@@ -54,6 +54,9 @@ nav li a:hover {
   color: #e4960f;
   border-radius: 5px;
 }
+.current {
+  border-bottom: 1px solid #e4960f;
+}
 /* Header / NAVBAR  ends ------------------------------------- */
 .contacttext {
   font-size: 24px;
