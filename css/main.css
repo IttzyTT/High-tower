@@ -53,6 +53,9 @@ nav ul li a {
 nav li a:hover {
   color: #e4960f;
 }
+.current {
+  border-bottom: 1px solid #e4960f;
+}
 /* Header / NAVBAR  ends ------------------------------------- */
 
 /* Main hem start--------------------------- */
