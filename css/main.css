@@ -81,25 +81,21 @@ main {
   margin-bottom: 30px;
   margin-top: 20px;
 }
-.cards-btn {
-  width: 150px;
-  height: 40px;
+
+.btn a {
+  color: whitesmoke;
   background-color: #3d5bf195;
   border-radius: 5px;
-  border-style: none;
-  display: block;
-  margin: 0 auto;
-  margin-top: 100px;
-}
-.cards-btn a {
-  color: whitesmoke;
-  border-radius: 5px;
   text-decoration: none;
-  padding: 10px 50px;
+  text-align: center;
+  padding: 15px 20px;
+  display: block;
+
+  width: 100px;
+  margin: 0 auto;
 }
-.cards-btn a:hover {
+.btn a:hover {
   color: whitesmoke;
-  padding: 10px 50px;
   background-color: #e4960f;
 }
 .cards-title h2 {
@@ -114,6 +110,7 @@ main {
   margin-top: 15px;
   font-weight: 300;
   color: white;
+  margin-bottom: 100px;
 }
 .card-one,
 .card-two,
