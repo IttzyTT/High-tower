@@ -66,6 +66,17 @@ nav li a:hover {
 }
 main {
   grid-area: main;
+  color: whitesmoke;
+}
+
+main h2 {
+  font-size: 24px;
+  font-weight: 200;
+}
+
+main p {
+  font-size: 16px;
+  font-weight: 300;
 }
 .cards {
   display: grid;
@@ -83,8 +94,8 @@ main {
 }
 
 .btn a {
-  color: whitesmoke;
   background-color: #3d5bf195;
+  color: whitesmoke;
   border-radius: 5px;
   text-decoration: none;
   text-align: center;
@@ -94,21 +105,18 @@ main {
   margin: 0 auto;
 }
 .btn a:hover {
-  color: whitesmoke;
   background-color: #e4960f;
 }
 .cards-title h2 {
   font-size: 24px;
   text-align: center;
   font-weight: 300;
-  color: white;
 }
 .cards-txt p {
   font-size: 14px;
   text-align: center;
   margin-top: 15px;
   font-weight: 300;
-  color: white;
   margin-bottom: 100px;
 }
 .card-one,
