@@ -357,6 +357,9 @@ main p {
     text-align: center;
     font-size: 12px;
   }
+  .footer-map {
+    width: 200px;
+  }
 }
 /* -------------------------------------------------------------------- */
 @media screen and (max-width: 875px) {
@@ -404,5 +407,8 @@ main p {
   main p {
     font-size: 14px;
     font-weight: 300;
+  }
+  .footer-map {
+    width: 150px;
   }
 }
