@@ -150,9 +150,8 @@ main p {
   text-align: left;
 }
 .card-two h1 {
-    font-size: 3em;
-    padding: 30px 40px 0px 40px;
-
+  font-size: 3em;
+  padding: 30px 40px 0px 40px;
 }
 .card-two p {
   font-size: 1.1em;
@@ -194,11 +193,11 @@ main p {
 .dropdown-content {
   display: none;
   position: absolute;
-  right: 0; 
+  right: 0;
 
   background-color: #f1f1f1;
   min-width: 100px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 .dropdown-content a {
@@ -333,37 +332,36 @@ footer {
 
 /* midre desktop skärmar 960-1200 */
 @media screen and (min-width: 960px) and (max-width: 1200px) {
-	.container {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: auto;
-      grid-template-areas:
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
       "header"
       "main"
       "footer";
-    }
-    .infocard {
-      grid-area: infocard;
-      padding: 60px 150px 60px 150px;
-    } 
-    .card-two h1{
-      font-size: 2.4em;
-      padding: 10px 20px 0px 40px;
-    }
-    .card-two p {
-      font-size: 1.1em;
-      padding: 0px 20px 0px 40px;
-
-    }
+  }
+  .infocard {
+    grid-area: infocard;
+    padding: 60px 150px 60px 150px;
+  }
+  .card-two h1 {
+    font-size: 2.4em;
+    padding: 10px 20px 0px 40px;
+  }
+  .card-two p {
+    font-size: 1.1em;
+    padding: 0px 20px 0px 40px;
+  }
 }
 /* Tablet skärmar 768-960 */
 @media screen and (min-width: 768px) and (max-width: 960px) {
-  nav ul li{
+  nav ul li {
     display: none;
   }
   .dropdown {
-  display: inline;
-}
+    display: inline;
+  }
   .container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -377,7 +375,7 @@ footer {
     grid-area: infocard;
     padding: 70px 120px 70px 120px;
   }
-  .card-two h1{
+  .card-two h1 {
     font-size: 2em;
     padding: 10px 20px 0px 40px;
   }
@@ -399,6 +397,12 @@ footer {
       "main"
       "footer";
   }
+  nav ul li {
+    display: none;
+  }
+  .dropdown {
+    display: inline;
+  }
   .logo {
     padding: 5px;
     height: 40px;
@@ -416,7 +420,7 @@ footer {
     font-size: 2em;
   }
 
-  .infocard p{
+  .infocard p {
     font-size: 1.5em;
   }
   .card-one {
@@ -426,7 +430,7 @@ footer {
     width: 100%;
     padding-bottom: 40px;
   }
-  .card-two h1{
+  .card-two h1 {
     font-size: 3.2em;
     padding: 10px 20px 0px 40px;
   }
